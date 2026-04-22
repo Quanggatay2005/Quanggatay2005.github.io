@@ -1,339 +1,147 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>My Portfolio</title>
-    <link rel="stylesheet" href="style.css" />
-    <!-- box icons -->
-    <link
-      rel="stylesheet"
-      href="https://unpkg.com/boxicons@latest/css/boxicons.min.css" />
-  </head>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dang Minh Quang | Backend & AI Engineer</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+</head>
+<body>
 
-  <body>
-    <!-- <h1> Hello world!</h1>
-    <h2> This is my portfolio website </h2> -->
+    <nav class="navbar">
+        <div class="logo">DMQ.</div>
+        <ul class="nav-links">
+            <li><a href="#about">1. Giới thiệu</a></li>
+            <li><a href="#education">2. Học vấn</a></li>
+            <li><a href="#skills">3. Kỹ năng</a></li>
+            <li><a href="#projects">4. Dự án</a></li>
+            <li><a href="#certificates">5. Chứng chỉ</a></li>
+        </ul>
+    </nav>
 
-    <div class="wrapper">
-      <div class="cover cover-left"></div>
-      <div class="cover cover-right turn"></div>
-      <div class="book">
-        <!-- profile page -->
-        <div class="book-page page-left">
-          <div class="profile-page">
-            <img src="img\avatar\mario.png" alt="profile-avatar" />
-            <h1>Mario Andolini</h1>
-            <h3>Web Developer</h3>
-            <div class="social-media">
-              <a href=""><i class="bx bxl-facebook"></i></a>
-              <a href=""><i class="bx bxl-twitter"></i></a>
-              <a href=""><i class="bx bxl-linkedin"></i></a>
-              <a href=""><i class="bx bxl-instagram"></i></a>
+    <main>
+        <section id="about" class="section">
+            <div class="content-wrapper">
+                <h1 class="heading">Dang Minh Quang</h1>
+                <h2 class="sub-heading">Backend Developer & AI Engineer</h2>
+                <div class="about-text">
+                    <p>Tôi là sinh viên ngành Khoa học máy tính với niềm đam mê mãnh liệt dành cho Trí tuệ nhân tạo (AI) và 
+                        Backend. Định hướng của tôi là xây dựng các hệ thống backend mạnh mẽ, bảo mật cao và tích hợp các mô hình AI để giải quyết các bài toán kỹ thuật phức tạp.</p>
+                    <p>Tôi luôn đề cao tư duy hệ thống và viết ra những dòng code tối ưu nhất.</p>
+                </div>
+                <div class="social-links">
+                    <a href="https://github.com/Quanggatay2005"><i class='bx bxl-github'></i></a>
+                    <a href="https://www.linkedin.com/in/minh-quang-88a55535b/"><i class='bx bxl-linkedin-square'></i></a>
+                    <a href="mailto:mquang1305@gmail.com"><i class='bx bx-envelope'></i></a>
+                </div>
+                <a href="#" class="btn primary-btn">Tải CV của tôi</a>
             </div>
+        </section>
 
-            <p>
-              Hi, I'm Mario Andolini, a Web Developer. Lorem ipsum dolor sit
-              amet consectetur adipisicing elit. Dolore temporibus error fugit
-              officiis doloremque quam molestiae exercitationem. Nemo ipsa,
-              temporibus numquam exercitationem magni id explicabo voluptatum
-              veniam suscipit. Quaerat, nulla!
-            </p>
-            <div class="btn-box">
-              <a href="#" class="btn">Download CV</a>
-              <a href="#" class="btn contact-me">Contact Me</a>
+        <section id="education" class="section alt-bg">
+            <div class="content-wrapper">
+                <h2 class="section-title">Học vấn</h2>
+                <div class="card">
+                    <div class="card-header">
+                        <h3>Đại học Bách Khoa TP.HCM (HCMUT)</h3>
+                        <span class="date">09/2023 - 06/2027 (Dự kiến)</span>
+                    </div>
+                    <h4>Cử nhân Khoa học Máy tính (Chuyên ngành Trí tuệ Nhân tạo)</h4>
+                    <p><strong>GPA:</strong> 3.0/4.0</p>
+                    <p><strong>Môn học tiêu biểu:</strong> Cấu trúc dữ liệu & Giải thuật, Hệ cơ sở dữ liệu, Machine Learning, Lập trình cho KHDL và Trí tuệ nhân tạo</p>
+                </div>
             </div>
-          </div>
+        </section>
+
+        <section id="skills" class="section">
+            <div class="content-wrapper">
+                <h2 class="section-title">Kỹ năng chuyên môn</h2>
+                <div class="skills-grid">
+                    <div class="skill-category">
+                        <h3>Ngôn ngữ</h3>
+                        <ul>
+                            <li>Python</li>
+                            <li>C / C++</li>
+                        </ul>
+                    </div>
+                    <div class="skill-category">
+                        <h3>AI Frameworks & Libraries</h3>
+                        <ul>
+                            <li>Deep Learning (CNN, Autoencoders)</li>
+                            <li>PySpark</li>
+                            <li>numpy, scikit-learn, pandas, torch, matplotlib</li>
+                        </ul>
+                    </div>
+                    <div class="skill-category">
+                        <h3>Backend Frameworks</h3>
+                        <ul>
+                            <li>Node.js</li>
+                            <li>Express.js</li>
+                            <li>Flask</li>
+                        </ul>
+                    </div>
+                    <div class="skill-category">
+                        <h3>Các công cụ khác</h3>
+                        <ul>
+                            <li>Git, Docker, Linux</li>
+                            <li>Figma, VS Code, Pycharm</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects" class="section alt-bg">
+            <div class="content-wrapper">
+                <h2 class="section-title">Dự án tiêu biểu</h2>
+                <div class="projects-list">
+                    <div class="card">
+                        <h3>Ứng dụng AI trong phân tích rò rỉ dữ liệu</h3>
+                        <div class="project-meta">
+            <span><i class='bx bx-calendar'></i> 10/2025 - 01/2026</span>
+            <span><i class='bx bx-user'></i> Cá nhân</span>
         </div>
-        <!-- page 1 & 2 -->
-        <div class="book-page page-right turn" id="turn-1">
+                        <p class="tech-stack">Python, tensorflow, Autoencoder</p>
+                        <p>Thiết kế và huấn luyện kiến trúc Autoencoder để phát hiện rò rỉ dữ liệu.</p>
+                        <p>Tối ưu hóa hàm mất mát (loss function) và <b>ngưỡng lỗi tái thiết</b> (reconstruction error threshold), giúp phát hiện thành công <b>94.4%</b> các luồng dữ liệu rò rỉ mô phỏng mà không cần gán nhãn dữ liệu trước.</p>
+                        <p>Xây dựng pipeline tiền xử lý dữ liệu và huấn luyện mô hình bằng Python và <b>TensorFlow/PyTorch</b>, xử lý <b>hơn 200MB</b> dữ liệu thô để trích xuất các đặc trưng (features) quan trọng.</p>
 
-          <!-- page 1 (work experience) -->
-          <div class="page-front">
-            <h1 class="title">Work Experience</h1>
-            <div class="workeduc-box">
-              <div class="workeduc-content">
-                <span class="year">
-                  <i class="bx bx-calendar-alt"></i>2023-2024
-                </span>
-                <h3>Web Developer - Company</h3>
-                <p>
-                  Lorem, ipsum dolor sit amet consectetur adipisicing elit. Qui
-                  alias vero exercitationem magnam vitae a. Harum obcaecati enim
-                  sit quam ab voluptate aperiam aliquam ipsam.
-                </p>
-              </div>
-
-              <div class="workeduc-content">
-                <span class="year">
-                  <i class="bx bx-calendar-alt"></i>2024-2025
-                </span>
-                <h3>Web Developer - Company</h3>
-                <p>
-                  Lorem, ipsum dolor sit amet consectetur adipisicing elit. Qui
-                  alias vero exercitationem magnam vitae a. Harum obcaecati enim
-                  sit quam ab voluptate aperiam aliquam ipsam.
-                </p>
-              </div>
-
-              <div class="workeduc-content">
-                <span class="year">
-                  <i class="bx bx-calendar-alt"></i>2025-2026
-                </span>
-                <h3>Web Developer - Company</h3>
-                <p>
-                  Lorem, ipsum dolor sit amet consectetur adipisicing elit. Qui
-                  alias vero exercitationem magnam vitae a. Harum obcaecati enim
-                  sit quam ab voluptate aperiam aliquam ipsam.
-                </p>
-              </div>
+                        <a href="https://github.com/Quanggatay2005/anomaly_detection/tree/main" class="btn outline-btn">Xem Source Code</a>
+                    </div>
+                    <div class="card">
+                        <h3>Focus Workspace Companion</h3>
+                        <p class="tech-stack">C++, OpenCV, FastAPI</p>
+                        <p>Ứng dụng desktop hỗ trợ làm việc tập trung. Sử dụng C++ và OpenCV làm vision engine, kết hợp với Python FastAPI xây dựng backend cho chatbot hỗ trợ.</p>
+                        <a href="#" class="btn outline-btn">Xem Source Code</a>
+                    </div>
+                    <div class="card">
+                        <h3>Hệ thống Anomaly Detection</h3>
+                        <p class="tech-stack">Python, Deep Learning</p>
+                        <p>Phát triển hệ thống phát hiện bất thường áp dụng các mô hình học máy và học sâu để nhận diện các mẫu dữ liệu không hợp lệ.</p>
+                        <a href="#" class="btn outline-btn">Xem Source Code</a>
+                    </div>
+                </div>
             </div>
-            <span class="number-page">1</span>
-            <!-- next button -->
-            <span class="nextprev-btn" data-page="turn-1">
-              <i class="bx bx-chevron-right"></i>
-            </span>
-          </div>
+        </section>
 
-          <!-- page 2 (education) -->
-          <div class="page-back">
-            <h1 class="title">Education</h1>
-            <div class="workeduc-box">
-              <div class="workeduc-content">
-                <span class="year">
-                  <i class="bx bx-calendar-alt"></i>2019-2020
-                </span>
-                <h3>Master Degree - University</h3>
-                <p>
-                  Lorem, ipsum dolor sit amet consectetur adipisicing elit. Qui
-                  alias vero exercitationem magnam vitae a. Harum obcaecati enim
-                  sit quam ab voluptate aperiam aliquam ipsam.
-                </p>
-              </div>
-
-              <div class="workeduc-content">
-                <span class="year">
-                  <i class="bx bx-calendar-alt"></i>2020-2021
-                </span>
-                <h3>Master Degree - University</h3>
-                <p>
-                  Lorem, ipsum dolor sit amet consectetur adipisicing elit. Qui
-                  alias vero exercitationem magnam vitae a. Harum obcaecati enim
-                  sit quam ab voluptate aperiam aliquam ipsam.
-                </p>
-              </div>
-
-              <div class="workeduc-content">
-                <span class="year">
-                  <i class="bx bx-calendar-alt"></i>2021-2022
-                </span>
-                <h3>Master Degree - University</h3>
-                <p>
-                  Lorem, ipsum dolor sit amet consectetur adipisicing elit. Qui
-                  alias vero exercitationem magnam vitae a. Harum obcaecati enim
-                  sit quam ab voluptate aperiam aliquam ipsam.
-                </p>
-              </div>
+        <section id="certificates" class="section">
+            <div class="content-wrapper">
+                <h2 class="section-title">Chứng chỉ & Khóa học</h2>
+                <div class="card">
+                    <div class="card-header">
+                        <h3>Red Teaming Exploit Development with Assembly and C</h3>
+                        <span class="date">Đã hoàn thành</span>
+                    </div>
+                    <p>Khóa học chuyên sâu về phát triển mã khai thác lỗ hổng bảo mật, củng cố nền tảng kiến thức cho định hướng Reverse Engineering và An toàn thông tin.</p>
+                </div>
             </div>
-            <span class="number-page">2</span>
-            <!-- prev button -->
-            <span class="nextprev-btn back" data-page="turn-1">
-              <i class="bx bx-chevron-left"></i>
-            </span>
-          </div>
-        </div>
+        </section>
+    </main>
 
-        <!-- page 3 & 4 -->
-        <div class="book-page page-right turn" id="turn-2">
-            <!-- page 3 (my services) -->
-            <div class="page-front">
-              <h1 class="title">My Services</h1>
-              <div class="services-box">
-                <div class="services-content">
-                  <i class="bx bx-code-alt"></i>
-                  <h3>Web Development</h3>
-                  <p>
-                    Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                  </p>
-                  <a href="#" class="btn">Read More</a>
-                </div>
-                <div class="services-content">
-                  <i class="bx bxs-paint"></i>
-                  <h3>Creative Design</h3>
-                  <p>
-                    Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                  </p>
-                  <a href="#" class="btn">Read More</a>
-                </div>
-                <div class="services-content">
-                  <i class="bx bx-bar-chart-alt"></i>
-                  <h3>Digital Marketing</h3>
-                  <p>
-                    Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                  </p>
-                  <a href="#" class="btn">Read More</a>
-                </div>
-                <div class="services-content">
-                  <i class="bx bx-search"></i>
-                  <h3>SEO</h3>
-                  <p>
-                    Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                  </p>
-                  <a href="#" class="btn">Read More</a>
-                </div>
-              </div>
-              <span class="number-page">3</span>
-              <!-- prev button -->
-              <span class="nextprev-btn" data-page="turn-2">
-                <i class="bx bx-chevron-right"></i>
-              </span>
-            </div>
-            <!-- page 4 (my skills) -->
-            <div class="page-back">
-            <h1 class="title">My Skills</h1>
-            <div class="skills-box">
-              <div class="skills-content">
-                <h3>Back-End</h3>
-                <div class="content">
-                  <span><i class="bx bxl-c-plus-plus"></i>C#</span>
-                  <span><i class="bx bxl-javascript"></i>Javascript</span>
-                  <span><i class="bx bxl-php"></i>PHP</span>
-                  <span><i class="bx bxl-nodejs"></i>NodeJS</span>
-                </div>
-              </div>
-              <div class="skills-content">
-                <h3>Front-End</h3>
-                <div class="content">
-                  <span><i class="bx bxl-html5"></i>HTML</span>
-                  <span><i class="bx bxl-css3"></i>CSS</span>
-                  <span><i class="bx bxl-javascript"></i>JS</span>
-                  <span><i class="bx bxl-angular"></i>Angular</span>
-                  <span><i class="bx bxl-react"></i>React</span>
-                  <span><i class="bx bxl-bootstrap"></i>Bootstrap</span>
-                  <span><i class="bx bxl-tailwind-css"></i>Tailwind</span>
-                </div>
-              </div>
-              <div class="skills-content">
-                <h3>UI/UX Design</h3>
-                <div class="content">
-                  <span><i class="bx bxl-figma"></i>Figma</span>
-                </div>
-              </div>
-            </div>
-            <span class="number-page">4</span>
-            <!-- prev button -->
-            <span class="nextprev-btn back" data-page="turn-2">
-              <i class="bx bx-chevron-left"></i>
-            </span>
-            </div>
-        </div>
-        <!-- page 5 & 6 -->
-        <div class="book-page page-right" id="turn-3">
-          <!-- page 5 (latest project or my portfolio) -->
-          <div class="page-front">
-            <h1 class="title">Latest Project</h1>
-            <div class="portfolio-box">
-              <div class="img-box">
-                <img src="./img/portfolio.png" alt="" />
-              </div>
-              <div class="info-box">
-                <div class="info-title">
-                  <h3>Project Name</h3>
-                  <a href="#">Live Review<i class="bx bx-link-external"></i></a>
-                </div>
-                <p>Tech Used:</p>
-                <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Dolorem deleniti officia, distinctio soluta corporis incidunt
-                  provident corrupti quas et doloremque.q
-                </p>
-              </div>
-              <div class="btn-box">
-                <a href="#" class="btn">Source Code</a>
-                <a href="#" class="btn">More Projects</a>
-              </div>
-            </div>
-            <span class="number-page">5</span>
-            <!-- prev button -->
-            <span class="nextprev-btn" data-page="turn-3">
-              <i class="bx bx-chevron-right"></i>
-            </span>
-          </div>
-          <!-- page 6 (contact me) -->
-          <div class="page-back">
-            <h1 class="title">Contact Me!</h1>
-            <div class="contact-box">
-              <form action="#">
-                <input
-                  type="text"
-                  class="field"
-                  placeholder="Full Name"
-                  required />
-                <input
-                  type="email"
-                  class="field"
-                  placeholder="Email Address"
-                  required />
-                <textarea
-                  name=""
-                  id=""
-                  cols="30"
-                  rows="10"
-                  class="field"
-                  placeholder="Your Message"
-                  required></textarea>
-                <input type="submit" class="btn" value="Send Message" />
-              </form>
-            </div>
-            <span class="number-page">6</span>
-            <!-- prev button -->
-            <span class="nextprev-btn back" data-page="turn-3">
-              <i class="bx bx-chevron-left"></i>
-            </span>
-            <a href="#" class="back-profile"
-              ><p>Profile</p>
-              <i class="bx bxs-user"></i>
-            </a>
-          </div>
-        </div>
-      </div>
-    </div>
+    <footer>
+        <p>&copy; 2026 Dang Minh Quang. Minimalist Portfolio.</p>
+    </footer>
 
-    
-
-    <!-- profile page -->
-
-    <!-- page 1 & 2 -->
-
-    <!-- page 1 (work experience) -->
-
-    <!-- next button -->
-
-    <!-- page 2 (education) -->
-
-    <!-- prev button -->
-
-    <!-- page 3 & 4 -->
-
-    <!-- page 3 (my services) -->
-
-    <!-- prev button -->
-
-    <!-- page 4 (my skills) -->
-
-    <!-- prev button -->
-
-    <!-- page 5 & 6 -->
-
-    <!-- page 5 (latest project or my portfolio) -->
-
-    <!-- prev button -->
-
-    <!-- page 6 (contact me) -->
-
-    <!-- prev button -->
-
-    <script src="script.js"></script>
-  </body>
+</body>
 </html>
