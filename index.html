@@ -1,5 +1,6 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="vi">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,59 +8,71 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
 </head>
+
 <body>
 
     <nav class="navbar">
         <div class="logo">DMQ.</div>
         <ul class="nav-links">
-            <li><a href="#about">1. Giới thiệu</a></li>
-            <li><a href="#education">2. Học vấn</a></li>
-            <li><a href="#skills">3. Kỹ năng</a></li>
-            <li><a href="#projects">4. Dự án</a></li>
-            <li><a href="#certificates">5. Chứng chỉ</a></li>
+            <li><a href="#about" data-i18n="nav_about">1. Giới thiệu</a></li>
+            <li><a href="#education" data-i18n="nav_education">2. Học vấn</a></li>
+            <li><a href="#skills" data-i18n="nav_skills">3. Kỹ năng</a></li>
+            <li><a href="#projects" data-i18n="nav_projects">4. Dự án</a></li>
+            <li><a href="#certificates" data-i18n="nav_certificates">5. Chứng chỉ</a></li>
         </ul>
+        <div class="lang-switch">
+            <button id="lang-vi" class="lang-btn active">VI</button>
+            <span class="divider">|</span>
+            <button id="lang-en" class="lang-btn">EN</button>
+        </div>
     </nav>
 
     <main>
-        <section id="about" class="section">
+        <section id="about" class="section hidden">
             <div class="content-wrapper">
-                <h1 class="heading">Dang Minh Quang</h1>
-                <h2 class="sub-heading">Backend Developer & AI Engineer</h2>
+                <h1 class="heading" data-i18n="hero_name">Dang Minh Quang</h1>
+                <h2 class="sub-heading" data-i18n="hero_role">Backend Developer & AI Engineer</h2>
                 <div class="about-text">
-                    <p>Tôi là sinh viên ngành Khoa học máy tính với niềm đam mê mãnh liệt dành cho Trí tuệ nhân tạo (AI) và 
-                        Backend. Định hướng của tôi là xây dựng các hệ thống backend mạnh mẽ, bảo mật cao và tích hợp các mô hình AI để giải quyết các bài toán kỹ thuật phức tạp.</p>
-                    <p>Tôi luôn đề cao tư duy hệ thống và viết ra những dòng code tối ưu nhất.</p>
+                    <p data-i18n="hero_desc1">Tôi là sinh viên ngành Khoa học máy tính với niềm đam mê mãnh liệt dành
+                        cho Trí tuệ nhân tạo (AI) và Backend. Định hướng của tôi là xây dựng các hệ thống backend mạnh
+                        mẽ, bảo mật cao và tích hợp các mô hình AI để giải quyết các bài toán kỹ thuật phức tạp.</p>
+                    <p data-i18n="hero_desc2">Tôi luôn đề cao tư duy hệ thống và viết ra những dòng code tối ưu nhất.
+                    </p>
                 </div>
                 <div class="social-links">
                     <a href="https://github.com/Quanggatay2005"><i class='bx bxl-github'></i></a>
-                    <a href="https://www.linkedin.com/in/minh-quang-88a55535b/"><i class='bx bxl-linkedin-square'></i></a>
+                    <a href="https://www.linkedin.com/in/minh-quang-88a55535b/"><i
+                            class='bx bxl-linkedin-square'></i></a>
                     <a href="mailto:mquang1305@gmail.com"><i class='bx bx-envelope'></i></a>
                 </div>
-                <a href="#" class="btn primary-btn">Tải CV của tôi</a>
+                <a href="https://drive.google.com/dummy-cv-vi" target="_blank" id="cv-btn" class="btn primary-btn"
+                    data-i18n="hero_cv_btn">Tải CV của tôi</a>
             </div>
         </section>
 
-        <section id="education" class="section alt-bg">
+        <section id="education" class="section alt-bg hidden">
             <div class="content-wrapper">
-                <h2 class="section-title">Học vấn</h2>
+                <h2 class="section-title" data-i18n="edu_title">Học vấn</h2>
                 <div class="card">
                     <div class="card-header">
-                        <h3>Đại học Bách Khoa TP.HCM (HCMUT)</h3>
-                        <span class="date">09/2023 - 06/2027 (Dự kiến)</span>
+                        <h3 data-i18n="edu_school">Đại học Bách Khoa TP.HCM (HCMUT)</h3>
+                        <span class="date" data-i18n="edu_date">09/2023 - 06/2027 (Dự kiến)</span>
                     </div>
-                    <h4>Cử nhân Khoa học Máy tính (Chuyên ngành Trí tuệ Nhân tạo)</h4>
+                    <h4 data-i18n="edu_degree">Cử nhân Khoa học Máy tính (Chuyên ngành Trí tuệ Nhân tạo)</h4>
                     <p><strong>GPA:</strong> 3.0/4.0</p>
-                    <p><strong>Môn học tiêu biểu:</strong> Cấu trúc dữ liệu & Giải thuật, Hệ cơ sở dữ liệu, Machine Learning, Lập trình cho KHDL và Trí tuệ nhân tạo</p>
+                    <p><strong data-i18n="edu_courses_label">Môn học tiêu biểu:</strong> <span
+                            data-i18n="edu_courses">Cấu trúc dữ liệu & Giải thuật, Hệ cơ sở dữ liệu, Machine Learning,
+                            Lập trình cho KHDL và Trí tuệ nhân tạo</span></p>
                 </div>
             </div>
         </section>
 
-        <section id="skills" class="section">
+        <section id="skills" class="section hidden">
             <div class="content-wrapper">
-                <h2 class="section-title">Kỹ năng chuyên môn</h2>
+                <h2 class="section-title" data-i18n="skills_title">Kỹ năng chuyên môn</h2>
                 <div class="skills-grid">
                     <div class="skill-category">
-                        <h3>Ngôn ngữ</h3>
+                        <h3 data-i18n="skills_lang">Ngôn ngữ</h3>
                         <ul>
                             <li>Python</li>
                             <li>C / C++</li>
@@ -74,74 +87,77 @@
                         </ul>
                     </div>
                     <div class="skill-category">
-                        <h3>Backend Frameworks</h3>
+                        <h3 data-i18n="skills_backend">Backend</h3>
                         <ul>
-                            <li>Node.js</li>
-                            <li>Express.js</li>
-                            <li>Flask</li>
+                            <li>NodeJS</li>
+                            <li>fastAPI</li>
+                            <li>MongoDB</li>
                         </ul>
                     </div>
                     <div class="skill-category">
-                        <h3>Các công cụ khác</h3>
+                        <h3 data-i18n="skills_tools">Các công cụ khác</h3>
                         <ul>
                             <li>Git, Docker, Linux</li>
                             <li>Figma, VS Code, Pycharm</li>
+                            <li>Vibe coding: Google Antigravity, Github Copilot, Gemini AI</li>
                         </ul>
                     </div>
                 </div>
             </div>
         </section>
 
-        <section id="projects" class="section alt-bg">
+        <section id="projects" class="section alt-bg hidden">
             <div class="content-wrapper">
-                <h2 class="section-title">Dự án tiêu biểu</h2>
+                <h2 class="section-title" data-i18n="projects_title">Dự án tiêu biểu</h2>
                 <div class="projects-list">
                     <div class="card">
-                        <h3>Ứng dụng AI trong phân tích rò rỉ dữ liệu</h3>
+                        <h3 data-i18n="proj1_title">Ứng dụng AI trong phân tích rò rỉ dữ liệu</h3>
                         <div class="project-meta">
-            <span><i class='bx bx-calendar'></i> 10/2025 - 01/2026</span>
-            <span><i class='bx bx-user'></i> Cá nhân</span>
-        </div>
+                            <span><i class='bx bx-calendar'></i> 10/2025 - 12/2025</span>
+                            <span><i class='bx bx-user'></i> <span data-i18n="proj_personal">Cá nhân</span></span>
+                        </div>
                         <p class="tech-stack">Python, tensorflow, Autoencoder</p>
-                        <p>Thiết kế và huấn luyện kiến trúc Autoencoder để phát hiện rò rỉ dữ liệu.</p>
-                        <p>Tối ưu hóa hàm mất mát (loss function) và <b>ngưỡng lỗi tái thiết</b> (reconstruction error threshold), giúp phát hiện thành công <b>94.4%</b> các luồng dữ liệu rò rỉ mô phỏng mà không cần gán nhãn dữ liệu trước.</p>
-                        <p>Xây dựng pipeline tiền xử lý dữ liệu và huấn luyện mô hình bằng Python và <b>TensorFlow/PyTorch</b>, xử lý <b>hơn 200MB</b> dữ liệu thô để trích xuất các đặc trưng (features) quan trọng.</p>
+                        <p data-i18n="proj1_desc1">Thiết kế và huấn luyện kiến trúc Autoencoder để phát hiện rò rỉ dữ
+                            liệu.</p>
+                        <p data-i18n="proj1_desc2">Tối ưu hóa ngưỡng lỗi tái thiết, phát hiện thành công 94.4% các luồng dữ liệu rò rỉ mô phỏng.</p>
+                        <p data-i18n="proj1_desc3">Xây dựng pipeline tiền xử lý dữ liệu và huấn luyện mô hình bằng
+                            Python và <b>TensorFlow/PyTorch</b>, xử lý <b>hơn 200MB</b> dữ liệu thô để trích xuất các
+                            đặc trưng (features) quan trọng.</p>
 
-                        <a href="https://github.com/Quanggatay2005/anomaly_detection/tree/main" class="btn outline-btn">Xem Source Code</a>
+                        <a href="https://github.com/Quanggatay2005/anomaly_detection/tree/main" class="btn outline-btn"
+                            data-i18n="proj_code_btn">Xem Source Code</a>
                     </div>
                     <div class="card">
-                        <h3>Focus Workspace Companion</h3>
-                        <p class="tech-stack">C++, OpenCV, FastAPI</p>
-                        <p>Ứng dụng desktop hỗ trợ làm việc tập trung. Sử dụng C++ và OpenCV làm vision engine, kết hợp với Python FastAPI xây dựng backend cho chatbot hỗ trợ.</p>
-                        <a href="#" class="btn outline-btn">Xem Source Code</a>
-                    </div>
-                    <div class="card">
-                        <h3>Hệ thống Anomaly Detection</h3>
-                        <p class="tech-stack">Python, Deep Learning</p>
-                        <p>Phát triển hệ thống phát hiện bất thường áp dụng các mô hình học máy và học sâu để nhận diện các mẫu dữ liệu không hợp lệ.</p>
-                        <a href="#" class="btn outline-btn">Xem Source Code</a>
+                        <h3 data-i18n="proj2_title">Ứng dụng AI trong việc chẩn đoán CVD</h3>
+                        <p class="tech-stack">FastAPI, Streamlit, Kafka</p>
+                        <p data-i18n="proj2_desc1">Xây dựng pipeline xử lý dataset lớn (>1GB) BRFSS 2022 của CDC để phân tích và dự đoán xác suất mắc CVD.</p>
+                        <p data-i18n="proj2_desc2">Triển khai backend FastAPI, frontend Streamlit và container hóa bằng Docker.</p>
+                        <p data-i18n="proj2_desc3">So sánh hiệu suất các mô hình ML: LightGBM, Random Forest và SVM.</p>
+                        <p data-i18n="proj2_desc4">Xử lý data streaming quy mô lớn sử dụng PySpark, Kafka và MapReduce.</p>
+                        <a href="https://github.com/Quanggatay2005/ML_for_CVD" class="btn outline-btn" data-i18n="proj_code_btn">Xem Source Code</a>
                     </div>
                 </div>
             </div>
         </section>
 
-        <section id="certificates" class="section">
+        <section id="certificates" class="section hidden">
             <div class="content-wrapper">
-                <h2 class="section-title">Chứng chỉ & Khóa học</h2>
+                <h2 class="section-title" data-i18n="cert_title">Chứng chỉ</h2>
                 <div class="card">
                     <div class="card-header">
-                        <h3>Red Teaming Exploit Development with Assembly and C</h3>
-                        <span class="date">Đã hoàn thành</span>
+                        <h3>TOEIC (L&R)</h3>
+                        <span class="date" data-i18n="cert_score">Điểm: <b>815</b></span>
                     </div>
-                    <p>Khóa học chuyên sâu về phát triển mã khai thác lỗ hổng bảo mật, củng cố nền tảng kiến thức cho định hướng Reverse Engineering và An toàn thông tin.</p>
                 </div>
             </div>
         </section>
     </main>
 
     <footer>
-        <p>&copy; 2026 Dang Minh Quang. Minimalist Portfolio.</p>
+        <p>&copy; 2026 Dang Minh Quang. <span data-i18n="footer_text">Portfolio.</span></p>
     </footer>
 
+    <script src="script.js"></script>
 </body>
+
 </html>

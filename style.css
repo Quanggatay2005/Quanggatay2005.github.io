@@ -176,7 +176,7 @@ body {
 }
 
 .card:hover {
-    box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
 }
 
 .card-header {
@@ -253,16 +253,20 @@ footer {
 /* Responsive cho Mobile */
 @media (max-width: 768px) {
     .nav-links {
-        display: none; /* Ở mobile có thể cần nút Hamburger menu, tôi đang ẩn đi để giữ code đơn giản */
+        display: none;
+        /* Ở mobile có thể cần nút Hamburger menu, tôi đang ẩn đi để giữ code đơn giản */
     }
+
     .heading {
         font-size: 3rem;
     }
+
     .card-header {
         flex-direction: column;
         align-items: flex-start;
         gap: 0.5rem;
     }
+
     .section {
         padding: 80px 5% 40px;
     }
@@ -272,28 +276,34 @@ footer {
 .projects-list {
     display: flex;
     flex-direction: column;
-    gap: 2rem; /* Khoảng cách giữa các project */
+    gap: 2rem;
+    /* Khoảng cách giữa các project */
 }
 
 /* Tùy chỉnh riêng cho card trong danh sách dọc */
 .projects-list .card {
-    margin-bottom: 0; 
-    padding: 2.5rem; /* Tăng không gian bên trong card cho thoáng */
+    margin-bottom: 0;
+    padding: 2.5rem;
+    /* Tăng không gian bên trong card cho thoáng */
     display: flex;
     flex-direction: column;
-    align-items: flex-start; /* Canh trái các thành phần */
+    align-items: flex-start;
+    /* Canh trái các thành phần */
 }
 
 .projects-list .tech-stack {
     font-size: 0.95rem;
     margin: 0.8rem 0 1.2rem;
-    background: var(--bg-color); /* Làm nổi bật tech-stack hơn một chút */
+    background: var(--bg-color);
+    /* Làm nổi bật tech-stack hơn một chút */
     border: 1px solid var(--border-color);
 }
 
 .projects-list p:not(.tech-stack) {
-    font-size: 1.1rem; /* Tăng cỡ chữ mô tả lên một chút cho dễ đọc */
-    max-width: 850px; /* Giới hạn độ dài dòng để tối ưu UX đọc hiểu */
+    font-size: 1.1rem;
+    /* Tăng cỡ chữ mô tả lên một chút cho dễ đọc */
+    max-width: 850px;
+    /* Giới hạn độ dài dòng để tối ưu UX đọc hiểu */
     margin-bottom: 1.5rem;
 }
 
@@ -301,7 +311,8 @@ footer {
 .project-meta {
     display: flex;
     align-items: center;
-    gap: 1.5rem; /* Khoảng cách giữa thời gian và team size */
+    gap: 1.5rem;
+    /* Khoảng cách giữa thời gian và team size */
     margin-top: 0.3rem;
     margin-bottom: 0.8rem;
     color: var(--text-secondary);
@@ -311,15 +322,75 @@ footer {
 .project-meta span {
     display: flex;
     align-items: center;
-    gap: 0.4rem; /* Khoảng cách giữa icon và chữ */
+    gap: 0.4rem;
+    /* Khoảng cách giữa icon và chữ */
 }
 
 .project-meta i {
-    font-size: 1.1rem; /* Kích thước icon */
-    color: var(--text-secondary); /* Icon đồng màu với chữ để giữ sự tối giản */
+    font-size: 1.1rem;
+    /* Kích thước icon */
+    color: var(--text-secondary);
+    /* Icon đồng màu với chữ để giữ sự tối giản */
 }
 
 /* Điều chỉnh lại khoảng cách của tech-stack cho cân đối với phần meta vừa thêm */
 .projects-list .tech-stack {
     margin: 0.5rem 0 1rem;
+}
+
+/* --- Language Switcher --- */
+.lang-switch {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    background: var(--bg-alt);
+    padding: 6px 12px;
+    border-radius: 20px;
+    border: 1px solid var(--border-color);
+}
+
+.lang-btn {
+    background: none;
+    border: none;
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: var(--text-secondary);
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.lang-btn:hover {
+    color: var(--accent-color);
+}
+
+.lang-btn.active {
+    color: var(--accent-color);
+    text-decoration: underline;
+    text-underline-offset: 4px;
+}
+
+.divider {
+    color: var(--text-secondary);
+    font-size: 0.8rem;
+    opacity: 0.5;
+}
+
+/* --- Scroll Animations --- */
+.hidden {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
+.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+@media (max-width: 768px) {
+    .lang-switch {
+        position: absolute;
+        top: 1.5rem;
+        right: 5%;
+    }
 }
